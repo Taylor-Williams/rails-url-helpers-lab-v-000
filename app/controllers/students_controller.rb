@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate
     @student.active = !@student.active
-    redirect_to :"students#show"
+    redirect_to student_path(@student)
   end
 
   private
