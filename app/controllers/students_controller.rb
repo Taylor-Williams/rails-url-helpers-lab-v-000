@@ -11,7 +11,7 @@ class StudentsController < ApplicationController
 
   def activate
     @student.active = !@student.active
-    redirect_to :show
+    redirect_to :"students#show"
   end
 
   private
